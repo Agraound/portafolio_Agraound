@@ -1,0 +1,191 @@
+<!-- HTML editado de la web de Agraound con mejoras de identidad y estructura IA-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agraound RevenuX</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      blockquote {
+        color: #f0f0f0;
+        font-style: italic;
+        font-size: 1.1em;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+      <!-- Brand Logo -->
+      <img class="brand" src="./images/brand.png" alt="Agraound Logo" />
+
+      <!-- Nav -->
+      <nav id="nav">
+        <a href="#" class="icon solid fa-home"><span>Inicio</span></a>
+        <a href="#work" class="icon solid fa-folder"><span>Proyectos</span></a>
+        <a href="#services" class="icon solid fa-cogs"><span>Servicios</span></a>
+        <a href="#testimonios" class="icon solid fa-users"><span>Testimonios</span></a>
+        <a href="#agendar" class="icon solid fa-calendar"><span>Agendar</span></a>
+        <a href="#contact" class="icon solid fa-envelope"><span>Contacto</span></a>
+        <a href="https://www.linkedin.com/in/gomezguido278/" class="icon brands fa-linkedin"><span>LinkedIn</span></a>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Me -->
+        <article id="home" class="panel intro">
+          <header>
+            <h1>Guido Miguel Gómez</h1>
+            <p>
+              Consultor e Instructor en Business Intelligence<br />
+              Storytelling Industrial & Específico<br /><b>contacto@agraound.com</b>
+            </p>
+            <button class="get-started" onclick="window.location.href='#services'">
+              Empecemos <i class="fas fa-arrow-right"></i>
+            </button>
+          </header>
+          <a href="#work" class="jumplink pic">
+            <span class="arrow icon solid fa-chevron-right"><span>Ver proyectos</span></span>
+            <img src="images/me.jpg" alt="Guido Gómez" />
+          </a>
+        </article>
+
+        <!-- Work -->
+        <article id="work" class="panel">
+          <header>
+            <h2>Proyectos</h2>
+          </header>
+          <p>
+            Descubre el trabajo de Guido en Agraound, un experto en modelos
+            semánticos y análisis de datos con habilidades en DAX, Excel, Power
+            BI, T-SQL, Python y Figma. Esta galería presenta una colección
+            visual de sus proyectos y herramientas clave, incluyendo diseños en
+            Figma, paneles en Power BI, y configuraciones en Azure Data Studio,
+            VS Code, MSSQL, MySQL, MongoDB y PostgreSQL. Explora la fusión de
+            diseño UX/UI y análisis de datos en una selección del portafolio que
+            muestran la creatividad y precisión en cada proyecto.
+          </p>
+          <section>
+            <div class="row gallery-projects"></div>
+          </section>
+        </article>
+        <div class="modal-container d-none">
+          <button class="btn-close-modal" onclick="closeModal()">x</button>
+          <div class="modal-img">
+            <button class="back" onclick="backImg()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-arrow-left-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+                />
+              </svg>
+            </button>
+            <button class="next" onclick="nextImg()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-arrow-right-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                />
+              </svg>
+            </button>
+            <p class="index-gallery"></p>
+          </div>
+        </div>
+
+
+        <!-- Servicios -->
+        <article id="services" class="panel">
+          <header>
+            <h2>Servicios</h2>
+          </header>
+          <ul>
+            <li><strong>AIS (Agraound Insight Service):</strong> Dashboards, KPIs y visualización estratégica de datos.</li>
+            <li><strong>ADI (Agraound Data Intelligence):</strong> Desarrollo en Python, automatización de reportes, manejo de estructuras de datos complejas.</li>
+            <li><strong>Capacitaciones y workshops:</strong> Excel, Power BI, Storytelling de Datos.</li>
+          </ul>
+        </article>
+
+        <!-- Testimonios -->
+        <article id="testimonios" class="panel">
+          <header>
+            <h2>Testimonios</h2>
+          </header>
+          <blockquote>
+            "Gracias a Guido pudimos visualizar todo el flujo de ventas con claridad y tomar decisiones claves cada semana." <br />
+            <footer>– Cliente sector retail</footer>
+          </blockquote>
+          <blockquote>
+            "Explica lo complejo con una claridad que empodera. Recomiendo sus clases y consultorías." <br />
+            <footer>– Participante Bootcamp Excel</footer>
+          </blockquote>
+        </article>
+
+        <!-- Calendly -->
+        <article id="agendar" class="panel">
+          <header>
+            <h2>Agendá una reunión</h2>
+          </header>
+          <p>
+            ¿Querés una consulta personalizada o una reunión estratégica? Accedé a mi agenda y coordiná directamente:
+          </p>
+          <a href="https://calendly.com/guido-agraound" target="_blank" class="button primary">
+            Agendar en Calendly
+          </a>
+        </article>
+
+        <!-- Contacto -->
+        <article id="contact" class="panel">
+          <header>
+            <h2>Contactame</h2>
+          </header>
+          <form action="mailto:contacto@agraound.com" method="get">
+            <div class="row">
+              <div class="col-6 col-12-medium">
+                <input type="text" name="name" placeholder="Nombre" required />
+              </div>
+              <div class="col-6 col-12-medium">
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="col-12">
+                <textarea name="message" placeholder="Tu mensaje" rows="6" required></textarea>
+              </div>
+              <div class="col-12">
+                <button class="get-started" type="submit">
+                  Enviar <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </article>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <ul class="copyright">
+          <li>© 2024 - 2025 Agraound. Todos los derechos reservados.</li>
+          <li>"Todo lo que viene, viene con vos."</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          <li>Styled by Agraound RevenuX</li>
+          <li>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
