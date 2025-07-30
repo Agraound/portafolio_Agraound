@@ -1,38 +1,35 @@
+<!-- HTML editado de la web de Agraound con mejoras de identidad y estructura IA-->
 <!DOCTYPE html>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
-    <title>Agraound</title>
+    <title>Agraound RevenuX</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      blockquote {
+        color: #f0f0f0;
+        font-style: italic;
+        font-size: 1.1em;
+        line-height: 1.6em;
+      }
+    </style>
   </head>
   <body class="is-preload">
-    <!-- Wrapper-->
     <div id="wrapper">
+      <!-- Brand Logo -->
+      <img class="brand" src="./images/brand.png" alt="Agraound Logo" />
+
       <!-- Nav -->
-      <img class="brand" src="./images/brand.png" alt="brand" />
       <nav id="nav">
         <a href="#" class="icon solid fa-home"><span>Inicio</span></a>
-        <a href="#work" class="icon solid fa-folder"><span>Trabajo</span></a>
-        <a href="#contact" class="icon solid fa-envelope"
-          ><span>Contacto</span></a
-        >
-        <a
-          href="https://www.linkedin.com/in/gomezguido278/"
-          class="icon brands fa-linkedin"
-          ><span>Linkedin</span></a
-        >
+        <a href="#work" class="icon solid fa-folder"><span>Proyectos</span></a>
+        <a href="#services" class="icon solid fa-cogs"><span>Servicios</span></a>
+        <a href="#testimonios" class="icon solid fa-users"><span>Testimonios</span></a>
+        <a href="#agendar" class="icon solid fa-calendar"><span>Agendar</span></a>
+        <a href="#contact" class="icon solid fa-envelope"><span>Contacto</span></a>
+        <a href="https://www.linkedin.com/in/gomezguido278/" class="icon brands fa-linkedin"><span>LinkedIn</span></a>
       </nav>
 
       <!-- Main -->
@@ -40,35 +37,18 @@
         <!-- Me -->
         <article id="home" class="panel intro">
           <header>
-            <h1>Guido Gómez</h1>
+            <h1>Guido Miguel Gómez</h1>
             <p>
-              Consultor e Instructor en BI <br />
-              Storytelling Industrial & Especifico<br /><b
-                >contacto@agraound.com</b
-              >
+              Consultor e Instructor en Business Intelligence<br />
+              Storytelling Industrial & Específico<br /><b>contacto@agraound.com</b>
             </p>
-            <button class="get-started" onclick="getStarted()">
-              Empecemos
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right-circle"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                />
-              </svg>
+            <button class="get-started" onclick="window.location.href='#services'">
+              Empecemos <i class="fas fa-arrow-right"></i>
             </button>
           </header>
           <a href="#work" class="jumplink pic">
-            <span class="arrow icon solid fa-chevron-right"
-              ><span>See my work</span></span
-            >
-            <img src="images/me.jpg" alt="" />
+            <span class="arrow icon solid fa-chevron-right"><span>Ver proyectos</span></span>
+            <img src="images/me.jpg" alt="Guido Gómez" />
           </a>
         </article>
 
@@ -122,59 +102,67 @@
           </div>
         </div>
 
-        <!-- Contact -->
+
+        <!-- Servicios -->
+        <article id="services" class="panel">
+          <header>
+            <h2>Servicios</h2>
+          </header>
+          <ul>
+            <li><strong>AIS (Agraound Insight Service):</strong> Dashboards, KPIs y visualización estratégica de datos.</li>
+            <li><strong>ADI (Agraound Data Intelligence):</strong> Desarrollo en Python, automatización de reportes, manejo de estructuras de datos complejas.</li>
+            <li><strong>Capacitaciones y workshops:</strong> Excel, Power BI, Storytelling de Datos.</li>
+          </ul>
+        </article>
+
+        <!-- Testimonios -->
+        <article id="testimonios" class="panel">
+          <header>
+            <h2>Testimonios</h2>
+          </header>
+          <blockquote>
+            "Gracias a Guido pudimos visualizar todo el flujo de ventas con claridad y tomar decisiones claves cada semana." <br />
+            <footer>– Cliente sector retail</footer>
+          </blockquote>
+          <blockquote>
+            "Explica lo complejo con una claridad que empodera. Recomiendo sus clases y consultorías." <br />
+            <footer>– Participante Bootcamp Excel</footer>
+          </blockquote>
+        </article>
+
+        <!-- Calendly -->
+        <article id="agendar" class="panel">
+          <header>
+            <h2>Agendá una reunión</h2>
+          </header>
+          <p>
+            ¿Querés una consulta personalizada o una reunión estratégica? Accedé a mi agenda y coordiná directamente:
+          </p>
+          <a href="https://calendly.com/guido-agraound" target="_blank" class="button primary">
+            Agendar en Calendly
+          </a>
+        </article>
+
+        <!-- Contacto -->
         <article id="contact" class="panel">
           <header>
             <h2>Contactame</h2>
           </header>
-          <form action="send_email.php" method="post">
-            <div>
-              <div class="row">
-                <div class="col-6 col-12-medium">
-                  <input type="text" name="name" placeholder="Name" required />
-                </div>
-                <div class="col-6 col-12-medium">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    type="text"
-                    name="subject"
-                    placeholder="Subject"
-                    required
-                  />
-                </div>
-                <div class="col-12">
-                  <textarea
-                    name="message"
-                    placeholder="Message"
-                    rows="6"
-                    required
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <button class="get-started" type="submit">
-                    Enviar
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-arrow-right-circle"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+          <form action="mailto:contacto@agraound.com" method="get">
+            <div class="row">
+              <div class="col-6 col-12-medium">
+                <input type="text" name="name" placeholder="Nombre" required />
+              </div>
+              <div class="col-6 col-12-medium">
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="col-12">
+                <textarea name="message" placeholder="Tu mensaje" rows="6" required></textarea>
+              </div>
+              <div class="col-12">
+                <button class="get-started" type="submit">
+                  Enviar <i class="fas fa-arrow-right"></i>
+                </button>
               </div>
             </div>
           </form>
@@ -184,11 +172,11 @@
       <!-- Footer -->
       <div id="footer">
         <ul class="copyright">
-          <li>
-            &copy; 2024 - 2025 copyright. <br />
-            Todos los derechos reservados
-          </li>
+          <li>© 2024 - 2025 Agraound. Todos los derechos reservados.</li>
+          <li>"Todo lo que viene, viene con vos."</li>
           <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          <li>Styled by Agraound RevenuX</li>
+          <li>.</li>
         </ul>
       </div>
     </div>
